@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Webcam from './components/Webcam'
 import * as faceapi from 'face-api.js';
+import ExpressionFoodReviewer from './components/ExpressionFoodReviewer';
 
 function App() {
     const [isModelLoaded, setIsModelLoaded] = useState(false)
@@ -26,7 +26,7 @@ function App() {
 
     return (
     <>
-        {isModelLoaded && <Webcam autoPlay />}
+        {isModelLoaded && <ExpressionFoodReviewer />}
     </>
     )
 }
